@@ -1,0 +1,642 @@
+/* Reset and basic styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General body styles */
+body {
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    background-color: #181818; /* Dark background for a modern look */
+    color: #f5f5f5;
+    padding: 20px;
+}
+
+/* CV Container */
+.cv-container {
+    width: 70%;
+    margin: 0 auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: #1a1a1a; /* Dark text color to ensure visibility */
+}
+
+/* Header Section */
+.cv-header, .main-header {
+    text-align: center;
+    background-color: #005691; /* TU Dublin blue color */
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.cv-header h1, .header-title {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #1a1a1a;
+}
+
+.header-title {
+    text-align: left;
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Heading styling within the CV Container */
+.cv-container h2 {
+    color: #000000; /* Change text color to black */
+}
+/* Text styling within the CV Container */
+.cv-container h1, 
+.cv-container h2, 
+.cv-container h3, 
+.cv-container p, 
+.cv-container li, 
+.cv-container span {
+    color: #000000; /* Set all text color to black */
+}
+
+/* Additional styling for paragraphs and lists for better readability */
+.cv-container p, .cv-container li {
+    font-size: 1rem; /* Adjust font size as needed */
+    line-height: 1.6; /* Adjust line height for readability */
+    margin-bottom: 15px; /* Add spacing below paragraphs and list items */
+}
+
+
+
+/* Logo image adjustments */
+.header-image {
+    max-width: 120px;
+    height: auto;
+    display: block;
+}
+
+/* Hero Section */
+#hero {
+    height: 100vh;
+    background: url('background.jpg') no-repeat center center/cover;
+    position: relative;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.hero-title {
+    font-size: 3rem;
+    color: #FFD700;
+    animation: fadeIn 1.5s ease-out;
+}
+
+.hero-subtitle {
+    font-size: 1.5rem;
+    color: #f5f5f5;
+}
+
+.scroll-down {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 1rem;
+    background: #FFD700;
+    color: #181818;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    animation: pulse 2s infinite;
+}
+/* Container */
+.container {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 25%;
+    padding: 20px;
+    background-color: #242424;
+    border-right: 1px solid #444;
+}
+
+.sidebar a {
+    display: block;
+    padding: 10px 15px;
+    margin-bottom: 8px;
+    color: #FFD700;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.sidebar a:hover {
+    color: #FFD700;
+}
+
+/* Content adjustments */
+.content {
+    width: 75%;
+    padding: 20px;
+    background-color: #181818;
+}
+
+
+
+
+
+
+/* Year Tabs */
+.tabs {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    border-bottom: 1px solid #444;
+}
+
+.tab-link {
+    padding: 10px 20px;
+    margin: 0 10px;
+    font-size: 18px;
+    color: #f5f5f5;
+    text-decoration: none;
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+.tab-link:hover, .tab-link.active {
+    color: #FFD700;
+    border-bottom: 2px solid #FFD700;
+    font-weight: bold;
+}
+
+/* Module Listing Styling */
+.module-year {
+    display: none;
+    text-align: left;
+    margin-top: 30px;
+    color: #f5f5f5; /* Ensures module text is light enough to be readable */
+}
+
+/* Skill Bars */
+.skill-bars .skill {
+    margin-bottom: 15px;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 10px;
+    background: #333;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.progress {
+    height: 100%;
+    background: #FFD700;
+}
+
+/* Section Styling */
+section {
+    padding: 80px 10%;
+    text-align: center;
+    color: #f5f5f5;
+}
+
+#about img {
+    width: 150px;
+    border-radius: 50%;
+    margin-top: 1rem;
+    border: 2px solid #FFD700;
+}
+
+/* Skill Bars */
+.skill-bars .skill {
+    margin-bottom: 15px;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 10px;
+    background: #333;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.progress {
+    height: 100%;
+    background: #FFD700;
+}
+
+/* Project Gallery */
+.project-gallery {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #181818; /* Dark background for the entire gallery */
+}
+
+.project-card {
+    background-color: #181818; /* Dark background for the cards */
+    padding: 20px;
+    border-radius: 8px;
+    width: 48%; /* Adjusts to fit two boxes side by side */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: #f5f5f5; /* Light text color to contrast with the dark background */
+}
+
+.projects-container {
+    display: flex;
+    gap: 20px;
+}
+
+.project-box {
+    background-color: #333333; /* Dark grey background */
+    padding: 20px;
+    margin: 10px;
+    border-radius: 8px;
+    position: relative;
+    color: #FFFFFF; /* White text for contrast */
+}
+
+.arrow-link {
+    font-size: 24px;
+    color: #FFD700; /* Yellow arrow color */
+    text-decoration: none;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    transition: color 0.3s ease;
+}
+
+.arrow-link:hover {
+    color: #FFFFFF; /* White on hover */
+}
+
+
+.project-card h3 {
+    color: #FFD700; /* Gold color for headings */
+}
+
+.project-card p {
+    color: #f5f5f5; /* Light text color for paragraph */
+}
+
+.show-more-btn {
+    background-color: #1c5982; /* Blue button */
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.show-more-btn:hover {
+    background-color: #0c3c5c; /* Darker blue on hover */
+}
+
+/* Modal Styling */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Dark overlay for the modal */
+    z-index: 1000;
+    overflow-y: auto;
+}
+
+.modal-content {
+    background-color: #181818; /* Dark background for modal */
+    color: #f5f5f5; /* Light text color */
+    margin: 5% auto;
+    padding: 20px;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 8px;
+}
+
+.close {
+    float: right;
+    font-size: 24px;
+    cursor: pointer;
+    color: #FFD700; /* Gold color for close button */
+}
+
+/* Slideshow Styling */
+.slideshow-container {
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    margin: 20px auto;
+    background-color: #181818; /* Dark background for slideshow container */
+    border-radius: 8px;
+}
+
+.slide {
+    display: none;
+    width: 100%;
+}
+
+.slide img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    user-select: none;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev {
+    left: 0;
+    border-radius: 0 3px 3px 0;
+}
+
+/* Form Elements */
+form input, form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 12px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 1rem;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #ff5722;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #222;
+    color: #f5f5f5;
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+}
+/* Responsive */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sidebar {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .content {
+        width: 100%;
+    }
+
+    .cv-container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .hero-title {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .projects-container {
+        flex-direction: column;
+    }
+
+    .project-box {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    color: #FFFFFF;
+}
+
+body {
+    background-color: #f4f6f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* CV Container */
+.cv-container {
+    max-width: 800px;
+    width: 100%;
+    background-color: #000000; /* Black background */
+    color: #f5f5f5; /* White text color for contrast */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.cv-container:hover {
+    transform: translateY(-5px);
+}
+
+/* Header Section */
+.cv-header {
+    text-align: center;
+    background-color: #333333; /* Light grey background */
+    color: #000000; /* Black text color */
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.cv-header h1 {
+    font-size: 2em;
+    color: #FFD700;
+    margin-bottom: 5px;
+}
+
+.cv-header .title {
+    font-size: 1.2em;
+    color: #00000;
+}
+/* Section Heading Styling */
+.cv-section h2 {
+    font-size: 1.5em;
+    color: #FFD700; /* Yellow color for section headings */
+    margin-bottom: 10px;
+    border-left: 5px solid #FFD700;
+    padding-left: 10px;
+}
+
+/* Text styling within the CV Container */
+.cv-container h1, 
+.cv-container h2, 
+.cv-container h3, 
+.cv-container p, 
+.cv-container li, 
+.cv-container span {
+    color: #f5f5f5; /* White text color */
+}
+
+
+
+/* Paragraph and List styling */
+.cv-container p, .cv-container li {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+
+/* Contact Info Section */
+#contact-info p, #contact-info a {
+    font-size: 0.95em;
+    color: #555;
+    display: block;
+}
+
+#contact-info a {
+    color: #FFFFFF; /* Yellow links */
+    text-decoration: none;
+}
+
+#contact-info a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+.cv-footer {
+    text-align: center;
+    padding: 20px;
+    background: #222; /* Dark footer background */
+    color: #FFD700; /* Yellow text for footer */
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+/* Form Styles */
+form input, form textarea, form button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+form button {
+    background-color: #000000; /* Yellow background for button */
+    color: #000;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #000000; /* Darker yellow on hover */
+}
+
+.project-image {
+    max-width: 100%;
+    height: auto;
+    width: px; /* Set this width as per your preferred size */
+    margin-top: 10px;
+}
+
+/* GitHub Link styling */
+.github-link {
+    display: inline-flex;
+    align-items: center;
+    background-color: #24292f; /* GitHub background color */
+    color: #FFFFFF;
+    padding: 8px 16px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    box-shadow: none;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+
+/* GitHub text style */
+.github-text {
+    font-size: 1rem;
+}
+
+/* Hover effect */
+.github-link:hover {
+    background-color: #0d1117; /* Darker shade for hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* Remove outline */
+.github-link:focus {
+    outline: none;
+}
