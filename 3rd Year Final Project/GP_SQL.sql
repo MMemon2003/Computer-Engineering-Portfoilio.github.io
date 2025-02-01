@@ -1,0 +1,1 @@
+SELECT * FROM registerredd_patients.table_of_patients;
