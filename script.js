@@ -42,14 +42,14 @@ $(document).ready(function(){
 
     // typing text animation script
     var typed = new Typed(".typing", {
-        strings: ["Developer", "Designer", "Freelancer"],
+        strings: ["Developer", "Designer", "Learner"],
         typeSpeed: 100,
         backSpeed: 75,
         loop: true
     });
 
     var typed = new Typed(".typing-2", {
-        strings: ["Developer", "Designer", "Freelancer"],
+        strings: ["Developer", "Designer", "Learner"],
         typeSpeed: 100,
         backSpeed: 75,
         loop: true
@@ -91,3 +91,4 @@ function opentab(tabname){
     Event.currentTarget.classList.add("active-links");
     document.getElementById(tabname).classList.add("active-tab");
 }
+
